@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <style>
+            .blue-eyes .eye-color{
+                fill:white;
+            }
+            
+            .sad .mouth{
+                transform: rotate(180deg) scale(0.5);
+                transform-origin: 266px 300px;
+            }
+            
+            @keyframes moveEyes{
+                20%{
+                    transform: translate(-18px, -20px);
+                }
+                40%{
+                    transform: translate(0px, 0px);
+                }
+                65%{
+                    transform: translate(18px, -20px);
+                }
+            }
+            
+            @keyframes leftwis{
+                20%{
+                    transform: rotate(5deg);
+                }
+                60%{
+                    transform: :rotate(-5deg);
+                }
+                
+            }
+            
+            @keyframes rightwis{
+                40%{
+                    transform: rotate(5deg);
+                }
+                90%{
+                    transform: :rotate(-2deg);
+                }
+                
+            }
+            
+            @keyframes move{
+                20%{
+                    transform: rotateX(10deg) rotateY(10deg);
+                }
+                
+                40%{
+                    transform: rotateX(25deg) rotateY(10deg);
+                }
+                60%{
+                    transform: rotateX(10deg) rotateY(-10deg);
+                }
+                
+                80%{
+                    transform: rotateX(-10deg) rotateY(0deg);
+                }
+            }
+            
+            .move-around .inner-eye{
+                animation: moveEyes 12s infinite;
+            }
+            
+            .move-around .leftwis{
+                animation: leftwis 5s infinite;
+                transform-origin: 260px 260px;
+            }
+            
+            .move-around .rightwis{
+                animation: rightwis 5s infinite;
+                transform-origin: 260px 260px;
+            }
+            
+            .move-around {
+                animation: move 8s infinite;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="buttons">
+            <button data-add="blue-eyes">white eyes</button>
+            <button data-remove="blue-eyes">blue eyes</button>
+            <button data-add="sad">Sad</button>
+            <button data-remove="sad">Happy</button>
+            <button data-add="move-around">Move</button>
+            <button data-remove="move-around">stop</button>
+        </div>
+        
+        <svg class="cat blue-eyes sad" width="640.0000000000001" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+         <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+         <g>
+          <title>Layer 1</title>
+          <path id="svg_2" d="m211.62495,196.12502l-22.06245,-112.31252c0,0 68.18745,99.93752 68.74995,99.93752c0.5625,0 19.6875,0 19.56255,-0.37502c-0.12495,-0.37502 52.43745,-102.56249 52.3125,-102.9375c-0.12495,-0.37501 -21.81255,114.56252 -21.9375,114.1875c-0.12495,-0.37502 40.62495,33.56252 42.87495,64.50002c2.25,30.9375 -35.4375,75.375 -76.5,74.8125c-41.0625,-0.5625 -98.4375,-24.1875 -99,-72c-0.5625,-47.8125 36,-65.8125 36,-65.8125z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#ffff56"/>
+          <ellipse class="eye-color" ry="21.9375" rx="32.625" id="svg_3" cy="241.68751" cx="303.31246" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#00bfbf"/>
+          <ellipse class="eye-color" id="svg_5" ry="21.9375" rx="32.625" cy="245.06251" cx="226.24996" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#00bfbf"/>
+          <path class="mouth" id="svg_6" d="m200.37495,285.00002c0,0 35.4375,30.9375 67.5,31.5c32.0625,0.5625 61.875,-39.9375 61.75005,-40.31252c-0.12495,-0.37502 -39.81255,25.68752 -61.75005,27.37502c-21.9375,1.6875 -67.5,-18.5625 -67.5,-18.5625z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#ff5656"/>
+          <path id="svg_7" d="m333.12495,257.43752l163.00005,-65.62502l-163.00005,65.62502z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#ff5656"/>
+          <line class="leftwis" id="svg_11" y2="226.50002" x2="426.49996" y1="266.43752" x1="331.43745" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+          <line class="leftwis" id="svg_12" y2="280.50002" x2="501.31246" y1="272.62502" x1="337.62495" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+          <line class="rightwis" id="svg_13" y2="226.50002" x2="86.74995" y1="252.37502" x1="184.06245" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+          <line class="rightwis" id="svg_14" y2="285.00002" x2="90.68745" y1="269.25002" x1="187.99995" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+          <line class="rightwis" id="svg_15" y2="260.25002" x2="116.56245" y1="258.56252" x1="181.81245" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+          <line class="leftwis" id="svg_16" y2="266.43752" x2="391.62496" y1="266.43752" x1="343.24995" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="none"/>
+          <ellipse class="inner-eye" id="svg_19" ry="9" rx="9" cy="249.00001" cx="307.81246" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000"/>
+          <ellipse class="inner-eye" id="svg_21" ry="9" rx="9" cy="255.18751" cx="220.06246" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000"/>
+         </g>
+        </svg>
+        <script>
+            var btns = document.querySelectorAll(".buttons button");
+            var cat = document.getElementsByClassName("cat")[0];
+            
+            
+            for(i=0; i < btns.length; i++){
+                btns[i].addEventListener("click", manageCatClasses);
+            }
+            
+            function manageCatClasses(){
+                if(this.getAttribute("data-add")){
+                   cat.classList.add(this.getAttribute("data-add"));
+                   }
+                if(this.getAttribute("data-remove")){
+                   cat.classList.remove(this.getAttribute("data-remove"));
+                   }
+                
+            }
+        </script>
+    </body>
+</html>
